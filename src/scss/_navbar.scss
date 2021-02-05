@@ -4,6 +4,7 @@
     padding-bottom: 1rem;
     font-family: $headings-font-family;
     font-weight: $headings-font-weight;
+    background: transparentize($secondary, 0.3);
     .navbar-brand {
         color: $white;
     }
@@ -13,14 +14,14 @@
             a.nav-link {
                 color: $white;
                 &:hover {
-                    color: $primary;
+                    color: $info;
                 }
                 &:active,
                 &:focus {
-                    color: $white;
+                    color:darken($info, 30%);
                 }
                 &.active {
-                    color: $primary;
+                    color: darken($info, 10%);
                 }
             }
         }
@@ -34,7 +35,9 @@
     #mainNav {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
+        background: transparentize($secondary, 0.15);
         transition: padding-top 0.3s, padding-bottom 0.3s;
+        
         .navbar-brand {
             font-size: 1.75em;
             transition: font-size 0.3s;
@@ -43,13 +46,16 @@
             margin-top: 0;
         }
         .navbar-nav > li.nav-item > a.nav-link.active {
-            color: $white;
-            background: $primary;
-            &:active,
-            &:focus,
+            color: $white;            
             &:hover {
-                color: $white;
-                background: $primary;
+                color: $info;
+            }
+            &:active,
+            &:focus {
+                color:darken($info, 30%);
+            }
+            &.active {
+                color: darken($info, 20%);
             }
         }
     }
