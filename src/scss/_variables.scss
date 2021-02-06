@@ -39,7 +39,10 @@ $modal-inner-padding: 4rem 1rem;
 $modal-content-border-width: 0;
 
 // Restate the spacer variable for overriding grid gutter width
-$spacer: 1rem;
+$spacer: 0.1rem;
 
 // Override the spacing between columns to add symmetry to the layout
 $grid-gutter-width: $spacer * 3;
+
+//allow the use of negative margin
+$enable-negative-margins: true;

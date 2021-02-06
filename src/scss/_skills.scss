@@ -1,47 +1,34 @@
-// Styling for the portfolio grid section
-.portfolio {
-    .portfolio-item {
-        cursor: pointer;
-        position: relative;
-        display: block;
-        max-width: 25rem;
-        border-radius: $border-radius;
-        overflow: hidden;
-        .portfolio-item-caption {
-            position: absolute;
-            top: 0;
-            left: 0;
-            transition: $transition-base;
-            opacity: 0;
-            background-color: fade-out($primary, 0.1);
-            &:hover {
-                opacity: 1;
-            }
-            .portfolio-item-caption-content {
-                font-size: 1.5rem;
-            }
-        }
-    }
-}
+// Styling for the skills grid section
 
-// Styling for the portfolio modals
-.portfolio-modal {
-    .portfolio-modal-title {
-        font-size: 2.25rem;
-        line-height: 2rem;
-        @include media-breakpoint-up(lg) {
+.skills {     
+    margin-top: -10rem !important;
+    background: $gray-light;    
+    .skills-item {  
+        padding-top: 1rem;
+        background: $white;              
+        .skills-icon,h3 {
+            color: $secondary ;
             font-size: 3rem;
-            line-height: 2.5rem;
+            margin-bottom: 1.75rem;
+        }
+        h3 {            
+            font-size: 1.75rem;
         }
     }
-    .close {
-        position: absolute;
-        z-index: 1;
-        right: 1.5rem;
-        top: 1rem;
-        font-size: 3rem;
-        line-height: 3rem;
-        color: $primary;
-        opacity: 1;
+}  
+@include media-breakpoint-up(md) {
+    .skills {    
+        background: none;                           
+        .page-section-heading, .divider-custom  {
+            margin: 0;
+            visibility: hidden;
+        }
+        .d-md-flex {
+            margin-top: -4rem !important;
+        }
+        .skills-item {            
+            margin: 0.3rem;
+            border-radius: $border-radius;
+        }
     }
 }
