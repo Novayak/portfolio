@@ -4,8 +4,9 @@
     margin-top: -10rem !important;
     background: $gray-light;    
     .skills-item {  
-        padding-top: 1rem;
-        background: $white;              
+        padding: 1rem;
+        background: $white;
+        border: 4px solid $gray-light;             
         .skills-icon,h3 {
             color: $secondary ;
             font-size: 3rem;
@@ -29,6 +30,7 @@
         .skills-item {            
             margin: 0.3rem;
             border-radius: $border-radius;
+            border: 1px solid $white; 
         }
     }
 }
