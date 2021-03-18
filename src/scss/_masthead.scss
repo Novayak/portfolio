@@ -2,10 +2,16 @@
     padding-top: calc(6rem + 74px);
     padding-bottom: 16rem;
     background: $primary;
-    color: $white;    
+    color: $white;
+    .masthead-title {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin: 1.5rem;   
+        color: $gray-light;     
+    }    
     .masthead-heading {
-        font-size: 1.75rem;
-        line-height: 1.75rem;
+        font-size: 2rem;
+        line-height: 2rem;
     }
     .masthead-subheading {
         font-size: 1.25rem;
@@ -23,6 +29,12 @@
             font-size: 3rem;
             line-height: 2.5rem;
         }
+        .masthead-title {
+            font-size: 2rem;
+            line-height: 2rem;
+            margin: 3rem;   
+             
+        }    
         .masthead-subheading {
             font-size: 1.5rem;
         }
