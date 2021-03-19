@@ -1,11 +1,5 @@
 @charset "UTF-8";
 /*!
-* Novayak - First v1.0.0 
-* Copyright 2021 Novayak
-* Licensed under MIT 
-*/
-/*!
-/*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
@@ -9957,7 +9951,7 @@ body {
   line-height: 1.5;
   color: #657275;
   text-align: center;
-  background-color: #F3F6FA;
+  background-color: #ebebeb;
 }
 
 .divider-custom {
@@ -10025,7 +10019,7 @@ body {
   padding-bottom: 1rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  background: rgba(74, 51, 66, 0.7);
+  background: rgba(94, 75, 88, 0.9);
   color: #fff;
 }
 #mainNav .navbar-brand {
@@ -10044,18 +10038,19 @@ body {
   color: #17403b;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #328b80;
+  color: #cccccc;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.8rem;
+  color: #fff;
 }
 
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    background: rgba(74, 51, 66, 0.85);
+    background: rgba(94, 75, 88, 0.85);
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
@@ -10075,7 +10070,7 @@ body {
     color: #17403b;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active.active {
-    color: #24665e;
+    color: #cccccc;
   }
 
   #mainNav.navbar-shrink {
@@ -10092,9 +10087,15 @@ body {
   background: #5E4B58;
   color: #fff;
 }
+.masthead .masthead-title {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin: 1.5rem;
+  color: #ebebeb;
+}
 .masthead .masthead-heading {
-  font-size: 1.75rem;
-  line-height: 1.75rem;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
@@ -10112,17 +10113,23 @@ body {
     font-size: 3rem;
     line-height: 2.5rem;
   }
+  .masthead .masthead-title {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 3rem;
+  }
   .masthead .masthead-subheading {
     font-size: 1.5rem;
   }
 }
 .skills {
-  margin-top: -8rem !important;
-  background: #F3F6FA;
+  margin-top: -10rem !important;
+  background: #ebebeb;
 }
 .skills .skills-item {
-  padding-top: 1rem;
+  padding: 1rem;
   background: #fff;
+  border: 4px solid #ebebeb;
 }
 .skills .skills-item .skills-icon, .skills .skills-item h3 {
   color: #4A3342;
@@ -10147,6 +10154,7 @@ body {
   .skills .skills-item {
     margin: 0.3rem;
     border-radius: 0.5rem;
+    border: 1px solid #fff;
   }
 }
 .works .works-item {
@@ -10243,14 +10251,17 @@ form .row:first-child .floating-label-form-group {
 }
 
 .footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background-color: #5E4B58;
   color: #fff;
 }
 
 .copyright {
-  background-color: #4A3342;
+  color: #ebebeb;
+  text-align: center;
+  background-color: #5E4B58;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
